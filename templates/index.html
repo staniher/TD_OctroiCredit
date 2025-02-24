@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire avec Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Formulaire</h2>
+        <h2 class="mb-4">{{resultat}}</h2>
+        <form action="/predict" method="POST">
+            <!-- Sexe -->
+            <div class="mb-3">
+                <label for="sexe" class="form-label">Sexe</label>
+                <select class="form-select" id="sexe" name="sexe">
+                    <option value="0">Femme</option>
+                    <option value="1">Homme</option>
+                </select>
+            </div>
+
+            <!-- Etat Civil -->
+            <div class="mb-3">
+                <label for="etat_civil" class="form-label">État Civil</label>
+                <select class="form-select" id="etat_civil" name="etat_civil">
+                    <option value="0">Célibataire</option>
+                    <option value="1">Marié(e)</option>
+                </select>
+            </div>
+
+            <!-- Nombre d'Enfants -->
+            <div class="mb-3">
+                <label for="nombre_enfants" class="form-label">Nombre d'Enfants</label>
+                <select class="form-select" id="nombre_enfants" name="nombre_enfants">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">plus </option>
+                </select>
+            </div>
+
+            <!-- Éducation -->
+            <div class="mb-3">
+                <label for="education" class="form-label">Éducation</label>
+                <select class="form-select" id="education" name="education">
+                    <option value="0">Non Diplômé</option>
+                    <option value="1">Diplômé</option>
+                </select>
+            </div>
+
+            <!-- Self Employé -->
+            <div class="mb-3">
+                <label for="self_employe" class="form-label">Self Employé</label>
+                <select class="form-select" id="self_employe" name="self_employe">
+                    <option value="0">Non</option>
+                    <option value="1">Oui</option>
+                </select>
+            </div>
+
+            <!-- Revenu -->
+            <div class="mb-3">
+                <label for="revenu" class="form-label">Revenu</label>
+                <input type="number" class="form-control" id="revenu" name="revenu" placeholder="Entrez votre revenu">
+            </div>
+
+            <!-- Reçu un Crédit dans le Passé -->
+            <div class="mb-3">
+                <label for="recu_credit_passe" class="form-label">Reçu un Crédit dans le Passé</label>
+                <select class="form-select" id="recu_credit_passe" name="recu_credit_passe">
+                    <option value="0">Non</option>
+                    <option value="1">Oui</option>
+                </select>
+            </div>
+
+            <!-- Résidence -->
+            <div class="mb-3">
+                <label for="residence" class="form-label">Résidence</label>
+                <select class="form-select" id="residence" name="residence">
+                    <option value="0">urbain</option>
+                    <option value="1">rural</option>
+                    <option value="3">semi rural</option>
+                    
+                </select>
+            </div>
+
+            <!-- Bouton de Soumission -->
+            <button type="submit" class="btn btn-primary">Soumettre</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS (optionnel) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
