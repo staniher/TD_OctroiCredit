@@ -1,4 +1,4 @@
-sklearn
+scikit-learn
 gunicorn
 Flask==3.1.0
 joblib==1.4.2
